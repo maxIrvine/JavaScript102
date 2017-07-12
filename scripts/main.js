@@ -42,5 +42,15 @@ function printBox(width, height) {
     console.log(ends);
 }
 
-
+function printBanner(banner) {
+    var len = banner.length;
+    var ends = len + 1;
+    var starPrint = "";
+    for (var i=0;i<=len+1;i++){
+        starPrint += "*";
+    }
+    console.log(starPrint);
+    console.log("*" + banner + "*");
+    console.log(starPrint);
+}
 
