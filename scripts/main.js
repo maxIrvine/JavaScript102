@@ -54,3 +54,13 @@ function printBanner(banner) {
     console.log(starPrint);
 }
 
+function factors(num) {
+    var str = "0"
+    for (var i=0;i<num;i++){
+        if (num%i == 0){
+            str += "," + i;
+        }
+    }
+    str += "," + num;
+    console.log(str);
+}
