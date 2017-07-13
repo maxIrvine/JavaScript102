@@ -172,3 +172,14 @@ function positiveSum(arr) {
     console.log(count);
 }
 
+function matrixAdd(arr1, arr2) {
+    var arr = [[0,0],[0,0]];
+    var len = arr1.length;
+    console.log(len);
+    for (var i=0;i<len;i++) {
+        for (var j=0;j<len;j++) {
+            arr[i][j] = arr1[i][j] + arr2[i][j];
+        }
+    }
+    console.log(arr);
+}
