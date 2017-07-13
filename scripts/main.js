@@ -183,3 +183,14 @@ function matrixAdd(arr1, arr2) {
     }
     console.log(arr);
 }
+
+function matrixMultiply(arr1,arr2) {
+    var arr = [[0,0],[0,0]];
+    var len = arr1.length;
+    arr[0][0] = (arr1[0][0] * arr2[0][0]) + (arr1[0][1] * arr2[1][0]);
+    arr[0][1] = (arr1[0][0] * arr2[0][1]) + (arr1[0][1] * arr2[1][1]);
+    arr[1][0] = (arr1[1][0] * arr2[0][0]) + (arr1[1][1] * arr2[1][0]);
+    arr[1][1] = (arr1[1][0] * arr2[0][1]) + (arr1[1][1] * arr2[1][1]);
+    
+    console.log(arr);
+}
