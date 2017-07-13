@@ -215,3 +215,69 @@ function rockPaperScissors(p1, p2) {
     }
     console.log(toReturn);
 }
+
+function ticTacToe(arr) {
+    var spot1 = arr[0][0];
+    var spot2 = arr[0][1];
+    var spot3 = arr[0][2];
+    if (spot1 === spot2 && spot1 === spot3 && spot1 === 'o') {
+        console.log("o");
+    }
+    if (spot1 === spot2 && spot1 === spot3 && spot1 === 'x') {
+        console.log("x");
+    }
+    var spot1 = arr[0][0];
+    var spot2 = arr[1][0];
+    var spot3 = arr[2][0];
+    if (spot1 === spot2 && spot1 === spot3 && spot1 === 'o') {
+        console.log("o");
+    }
+    if (spot1 === spot2 && spot1 === spot3 && spot1 === 'x') {
+        console.log("x");
+    }
+    var spot1 = arr[0][0];
+    var spot2 = arr[1][1];
+    var spot3 = arr[2][2];
+    if (spot1 === spot2 && spot1 === spot3 && spot1 === 'o') {
+        console.log("o");
+    }
+    if (spot1 === spot2 && spot1 === spot3 && spot1 === 'x') {
+        console.log("x");
+    }
+    var spot1 = arr[2][0];
+    var spot2 = arr[2][1];
+    var spot3 = arr[2][2];
+    if (spot1 === spot2 && spot1 === spot3 && spot1 === 'o') {
+        console.log("o");
+    }
+    if (spot1 === spot2 && spot1 === spot3 && spot1 === 'x') {
+        console.log("x");
+    }
+    var spot1 = arr[0][2];
+    var spot2 = arr[1][2];
+    var spot3 = arr[2][2];
+    if (spot1 === spot2 && spot1 === spot3 && spot1 === 'o') {
+        console.log("o");
+    }
+    if (spot1 === spot2 && spot1 === spot3 && spot1 === 'x') {
+        console.log("x");
+    }
+    var spot1 = arr[0][1];
+    var spot2 = arr[1][1];
+    var spot3 = arr[2][1];
+    if (spot1 === spot2 && spot1 === spot3 && spot1 === 'o') {
+        console.log("o");
+    }
+    if (spot1 === spot2 && spot1 === spot3 && spot1 === 'x') {
+        console.log("x");
+    }
+    var spot1 = arr[1][0];
+    var spot2 = arr[1][1];
+    var spot3 = arr[1][2];
+    if (spot1 === spot2 && spot1 === spot3 && spot1 === 'o') {
+        console.log("o");
+    }
+    if (spot1 === spot2 && spot1 === spot3 && spot1 === 'x') {
+        console.log("x");
+    }
+}
