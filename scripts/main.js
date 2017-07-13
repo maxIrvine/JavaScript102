@@ -127,5 +127,27 @@ function leetSpeak(str) {
 
 function longVowels(str) {
     var vowels = ['a', 'e', 'i', 'o', 'u'];
-    
+    var toReturn = "";
+    str = str.toLowerCase();
+    var len = str.length
+    var index1 = 0;
+    var index2 = 1;
+    while (index2 < len) {
+        var letter1 = str[index1];
+        var isIndex1 = vowels.includes(letter1);
+       if (isIndex1 && (str[index1] == str[index2])) {
+            toReturn += str.substring(0, index1);
+            var letter = str[index1];
+            toReturn += letter;
+            toReturn += letter;
+            toReturn += letter;
+            toReturn += letter;
+            toReturn += letter;
+            toReturn += str.substring(index2, len);
+            index2 = len;
+        }
+        index1++;
+        index2++;
+    }
+    console.log(toReturn);
 }
