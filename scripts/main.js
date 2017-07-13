@@ -86,3 +86,25 @@ function cipher(str, offset) {
     }
     console.log(toReturn);
 }
+
+function decipher(str, offset) {
+    var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+    var toReturn = "";
+    str = str.toLowerCase();
+    var len = str.length;
+     for (var i=0;i<len;i++){
+        var letter = str[i];
+        var alphaSpot = alphabet.indexOf(letter);
+        if (alphaSpot + offset > 26) {
+            alphaSpot -= 26;
+        }
+        if (alphaSpot === -1) {
+            toReturn += " ";
+        } else {
+            var newSpot = alphaSpot + offset;
+            var newLetter = alphabet[newSpot];
+            toReturn += newLetter;
+        }
+    }
+    console.log(toReturn);
+}
