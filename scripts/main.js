@@ -108,3 +108,24 @@ function decipher(str, offset) {
     }
     console.log(toReturn);
 }
+
+function leetSpeak(str) {
+    var dict = {'a':4, 'e':3, 'g':6, 'i':1, 'o':0, 's':5, 't':7};
+    var toReturn = "";
+    var len = str.length;
+    str = str.toLowerCase();
+    for (var i=0;i<len;i++) {
+        if (str[i] in dict){
+            var letter = str[i];
+            toReturn += dict[letter];
+        } else {
+            toReturn += str[i];
+        }
+    }
+    console.log(toReturn);
+}
+
+function longVowels(str) {
+    var vowels = ['a', 'e', 'i', 'o', 'u'];
+    
+}
