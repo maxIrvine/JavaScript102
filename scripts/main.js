@@ -191,6 +191,27 @@ function matrixMultiply(arr1,arr2) {
     arr[0][1] = (arr1[0][0] * arr2[0][1]) + (arr1[0][1] * arr2[1][1]);
     arr[1][0] = (arr1[1][0] * arr2[0][0]) + (arr1[1][1] * arr2[1][0]);
     arr[1][1] = (arr1[1][0] * arr2[0][1]) + (arr1[1][1] * arr2[1][1]);
-    
+
     console.log(arr);
+}
+
+function rockPaperScissors(p1, p2) {
+    var toReturn = "";
+
+    if (p1 === "rock" && p2 === "scissor") {
+        toReturn = "player 1";
+    } else if (p2 === "rock" && p1 === "scissor"){
+        toReturn = "player 2";
+    } else if (p1 === "rock" && p2 === "paper"){
+        toReturn = "player 2";
+    } else if (p1 === "rock" && p2 === "paper"){
+        toReturn = "player 1";
+    } else if (p2 === "paper" && p1 === "scissor"){
+        toReturn = "player 1";
+    } else if (p1 === "paper" && p2 === "scissor"){
+        toReturn = "player 2";
+    } else {
+        toReturn = "draw";
+    }
+    console.log(toReturn);
 }
