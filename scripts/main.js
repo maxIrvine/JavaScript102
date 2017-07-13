@@ -151,3 +151,12 @@ function longVowels(str) {
     }
     console.log(toReturn);
 }
+
+function sumNums(arr) {
+    var count = 0;
+    var len = arr.length;
+    for (var i=0;i<len;i++) {
+        count += arr[i];
+    }
+    console.log(count);
+}
