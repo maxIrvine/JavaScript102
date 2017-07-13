@@ -160,3 +160,15 @@ function sumNums(arr) {
     }
     console.log(count);
 }
+
+function positiveSum(arr) {
+    var count = 0;
+    var len = arr.length;
+    for (var i=0;i<len;i++) {
+        if (arr[i] > 0) {
+            count += arr[i];
+        }
+    }
+    console.log(count);
+}
+
